@@ -22,4 +22,12 @@ const saveToLS = (cart) => {
     localStorage.setItem('cart', cartStringiFied)
 }
 
-export {addToLS, getStoredCart}
+
+const removeCartFromLS = id => {
+    const cart = getStoredCart();
+    const remainig = cart.filter(idx => idx !== id)
+    saveToLS(remainig)
+
+}
+
+export {addToLS, getStoredCart, removeCartFromLS}

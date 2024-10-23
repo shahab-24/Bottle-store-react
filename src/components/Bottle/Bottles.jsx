@@ -3,7 +3,7 @@ import { useState } from "react";
 import Bottle from "../Bottle1/Bottle";
 import "./Bottles.css";
 import Cart from "../Cart/Cart";
-import { addToLS, getStoredCart } from "../../Utilities/locarStorage";
+import { addToLS, getStoredCart, removeCartFromLS } from "../../Utilities/locarStorage";
 
 const Bottles = () => {
   const [bottles, setBottles] = useState([]);
@@ -45,13 +45,26 @@ const Bottles = () => {
     addToLS(bottle.id);
   };
 
+
+  // remove cart from ui======
+const handleRemoveCart = id => {
+
+  // remove from UI ======
+  const remainingCart = cart.filter(bottle => bottle.id !== id);
+  setCart(remainingCart)
+
+
+  // remove from ls=====
+  removeCartFromLS(id)
+}
+
   return (
     <div>
       <div className="carts">
         <h4 className="cart_bg">Cart: {cart.length}</h4>
         <div className="cart">
           {cart.map((item) => (
-            <Cart key={cart.id} cart={item}></Cart>
+            <Cart key={cart.id} cart={item} handleRemoveCart={handleRemoveCart}></Cart>
           ))}
         </div>
       </div>
