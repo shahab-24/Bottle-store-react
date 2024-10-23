@@ -1,8 +1,14 @@
+import './Bottle.css'
 
-const Bottle = () => {
+
+const Bottle = ({bottle}) => {
+    const {name, img, price, ratings} = bottle;
     return (
-        <div>
-            <h3>single bottle</h3>
+        <div className="bottle">
+            <h3>{name}</h3>
+            <img src={img} alt="" />
+            <p>price: $ {price}</p>
+            <p>ratings: {ratings}</p>
         </div>
     );
 };

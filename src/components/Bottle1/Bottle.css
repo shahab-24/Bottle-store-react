@@ -1,0 +1,13 @@
+.bottle{
+    border: 2px solid seagreen;
+    margin: 10px;
+    padding: 5px;
+    border-radius: 15px;
+    background-color: blueviolet;
+    
+}
+
+.bottle img{
+    width: 250px;
+    border-radius: 10px;
+}
