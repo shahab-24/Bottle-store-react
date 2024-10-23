@@ -3,3 +3,26 @@
     grid-template-columns: repeat(3, 1fr);
     gap: 10px;
 }
+.carts{
+    border: 2px sold slateblue;
+    margin: 10px;
+    padding: 10px;
+    border-radius: 15px;
+    background-color: aquamarine;
+ 
+   
+    /* grid-template-columns: repeat(2, 1fr); */
+}
+.cart{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    padding: 10px;
+    
+}
+
+.cart img{
+    width: 150px;
+    border-radius: 20px;
+
+}
