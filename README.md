@@ -9,6 +9,7 @@
 ### 3. How to add item to ls by clicking ui button
 ### 4. then How to load data on ui from localstorage saved data with useEffect, apply dependencies
 ### 5. finally fetching data form ls and display those data on ui.....
+### 6. Implement How to remove cart form ls and also form ui
 
 
 
