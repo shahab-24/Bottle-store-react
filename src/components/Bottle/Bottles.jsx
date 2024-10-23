@@ -18,9 +18,14 @@ const Bottles = () => {
   // load data from localStorage with useEffect======
   useEffect(() => {
     // data loading after bottles length grater than 0=====
+
+    // jodi bottles thake tahle useEffect diye ls theke data load hobe otherwise useEffect call hobena====
     if (bottles.length > 0) {
+      // ls theke previous data thakle ta niye asha===
       const storedCart = getStoredCart();
       const savedCart = [];
+
+      //ager cart item gulor modde loop diye protita id acces kore seta bottle er id er sate match hole id gulo empty array te raka===== and finally setCart a sei array ta set kore deya jate ui te dekha jai====
       for (const id of storedCart) {
         const bottle = bottles.find((bottle) => bottle.id === id);
         if (bottle) {

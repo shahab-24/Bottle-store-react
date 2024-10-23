@@ -1,8 +1,15 @@
-# React + Vite
+# Bottle Store with React
+## I have learned about localstorage
+## I have faced difficulties when i implement localsotrage function.
+## and also face difficulties when implement display saved cart item on ui from localstorage
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+## learning outcomes from this projects
+### 1. How to getitem form ls
+### 2. How to set item on ls
+### 3. How to add item to ls by clicking ui button
+### 4. then How to load data on ui from localstorage saved data with useEffect, apply dependencies
+### 5. finally fetching data form ls and display those data on ui.....
 
-Currently, two official plugins are available:
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+
+###### Alhamdulillah.....I have learned many things about this project. epecially about localstorage...though i have to practice on localstorage...
